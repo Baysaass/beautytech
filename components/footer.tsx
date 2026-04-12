@@ -44,14 +44,14 @@ export function Footer() {
             </p>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://www.instagram.com/ribeskin_mongolia/"
                 className="w-10 h-10 rounded-sm bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/CO2Carboxy"
                 className="w-10 h-10 rounded-sm bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
                 aria-label="Facebook"
               >
