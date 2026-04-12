@@ -15,7 +15,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Beautytech LLC | Гоо сайхны технологи',
+  title: 'Beautytech LLC',
   description: 'Монгол улсын тэргүүлэгч гоо сайхны технологийн компани. RIBESKIN брэндийн Carboxy, Deep Shoot, G-Peel, Dermal бүтээгдэхүүнүүдийн албан ёсны борлуулагч.',
   keywords: ['Beautytech', 'RIBESKIN', 'Carboxy', 'Deep Shoot', 'G-Peel', 'Dermal', 'гоо сайхан', 'арьс арчилгаа', 'Монгол'],
   icons: {
