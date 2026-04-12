@@ -19,7 +19,19 @@ export const metadata: Metadata = {
   description: 'Монгол улсын тэргүүлэгч гоо сайхны технологийн компани. RIBESKIN брэндийн Carboxy, Deep Shoot, G-Peel, Dermal бүтээгдэхүүнүүдийн албан ёсны борлуулагч.',
   keywords: ['Beautytech', 'RIBESKIN', 'Carboxy', 'Deep Shoot', 'G-Peel', 'Dermal', 'гоо сайхан', 'арьс арчилгаа', 'Монгол'],
   icons: {
+     icon: [
+    { url: '/favicon.ico?v=2' }, // 👈 version нэм
+    {
+      url: '/icon-light-32x32.png',
+      media: '(prefers-color-scheme: light)',
+    },
+    {
+      url: '/icon-dark-32x32.png',
+      media: '(prefers-color-scheme: dark)',
+    },
+  ],
     icon: [
+      { url: '/favicon.ico' },
       {
         url: '/icon-light-32x32.png',
         media: '(prefers-color-scheme: light)',
