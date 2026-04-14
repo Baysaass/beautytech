@@ -17,36 +17,12 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'Beautytech LLC',
   description: 'Монгол улсын тэргүүлэгч гоо сайхны технологийн компани. RIBESKIN брэндийн Carboxy, Deep Shoot, G-Peel, Dermal бүтээгдэхүүнүүдийн албан ёсны борлуулагч.',
-  keywords: ['Beautytech', 'RIBESKIN', 'Carboxy', 'Deep Shoot', 'G-Peel', 'Dermal', 'гоо сайхан', 'арьс арчилгаа', 'Монгол'],
+  keywords: ['Beautytech', 'Co2 carboxy', 'Carboxy', 'Deep Shoot', 'G-Peel', 'карбокси', 'гоо сайхан', 'арьс арчилгаа', 'Монгол'],
   icons: {
-     icon: [
-    { url: '/favicon.ico?v=2' }, // 👈 version нэм
-    {
-      url: '/icon-light-32x32.png',
-      media: '(prefers-color-scheme: light)',
-    },
-    {
-      url: '/icon-dark-32x32.png',
-      media: '(prefers-color-scheme: dark)',
-    },
+  icon: [
+    { url: "/bicon.png", sizes: "32x32", type: "image/png" },
   ],
-    icon: [
-      { url: '/favicon.ico' },
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
-  },
+},
 }
 
 export const viewport: Viewport = {
