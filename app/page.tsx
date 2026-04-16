@@ -4,7 +4,6 @@ import { Solutions } from "@/components/solutions"
 import { Products } from "@/components/products"
 import { About } from "@/components/about"
 import { Treatments } from "@/components/treatments"
-
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
 

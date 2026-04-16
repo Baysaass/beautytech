@@ -67,8 +67,8 @@ export function Solutions() {
               </div>
 
               {/* Title Overlay */}
-              <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
-                <h3 className="text-foreground group-hover:text-card text-lg font-light tracking-wide transition-colors duration-500">
+              <div className="text-white absolute bottom-0 left-0 right-0 p-6 text-center">
+                <h3 className="text-white text-foreground group-hover:text-card text-lg font-light tracking-wide transition-colors duration-500">
                   {solution.subtitle}
                 </h3>
               </div>
