@@ -1,7 +1,7 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { MedicalHero } from "@/components/medical-hero"
-import { MedicalProducts } from "@/components/medical-products"
+import { HomeHero } from "@/components/home-hero"
+import { HomeProducts } from "@/components/home-products"
 
 export const metadata = {
   title: "Medical Solutions | Beautytech LLC",
@@ -12,8 +12,8 @@ export default function MedicalSolutionsPage() {
   return (
     <main className="min-h-screen">
       <Header />
-      <MedicalHero />
-      <MedicalProducts />
+      <HomeHero />
+      <HomeProducts />
       <Footer />
     </main>
   )

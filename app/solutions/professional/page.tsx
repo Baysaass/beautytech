@@ -1,8 +1,7 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { ProfessionalProducts } from "@/components/professional-products"
-import { ProfessionalHero } from "@/components/professional-hero"
-import { ProfessionalBenefits } from "@/components/professional-benefits"
+import { HomeHero } from "@/components/home-hero"
+import { HomeProducts } from "@/components/home-products"
 
 export const metadata = {
   title: "Professional Cosmetic Solutions | Beautytech LLC",
@@ -13,9 +12,8 @@ export default function ProfessionalSolutionsPage() {
   return (
     <main className="min-h-screen">
       <Header />
-      <ProfessionalHero />
-      <ProfessionalProducts />
-      <ProfessionalBenefits />
+      <HomeHero />
+      <HomeProducts />
       <Footer />
     </main>
   )
