@@ -5,7 +5,7 @@ import { Award, Users, Globe, Shield } from "lucide-react"
 
 const stats = [
   { number: "10+", label: "Жилийн туршлага" },
-  { number: "300+", label: "Хамтрагч гоо сайхны төв" },
+  { number: "377+", label: "Хамтрагч гоо сайхны төв" },
   { number: "20,000", label: "Сэтгэл хаманжтай үйлчлүүлэгчид" },
   { number: "300+", label: "Ribeskin албан ёсны certification" },
 ]

@@ -4,6 +4,7 @@ import { Solutions } from "@/components/solutions"
 import { Products } from "@/components/products"
 import { About } from "@/components/about"
 import { Treatments } from "@/components/treatments"
+// import { LoyaltyCalculator } from "@/components/loyalty-calculator"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Products />
       <About />
       <Treatments />
+{/* <LoyaltyCalculator /> */}
       <Contact />
       <Footer />
     </main>
