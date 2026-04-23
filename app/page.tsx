@@ -1,3 +1,4 @@
+import { PopupModal } from "@/components/popup-modal"
 import { Header } from "@/components/header"
 import { Hero } from "@/components/hero"
 import { Solutions } from "@/components/solutions"
@@ -11,6 +12,7 @@ import { Footer } from "@/components/footer"
 export default function Home() {
   return (
     <main className="min-h-screen">
+      <PopupModal />
       <Header />
       <Hero />
       <Solutions />
