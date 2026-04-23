@@ -50,7 +50,7 @@ export function PopupModal() {
         {/* Action button */}
         <div className="bg-white px-6 py-4 flex justify-center">
           <a
-            href=""
+            href="https://www.facebook.com/photo?fbid=1431509678991175&set=a.465552132253606"
             className="w-full text-center bg-black text-white font-semibold py-3 px-8 rounded-full hover:bg-gray-800 transition-colors text-sm tracking-wide"
           >
             Дэлгэрэнгүй үзэх
