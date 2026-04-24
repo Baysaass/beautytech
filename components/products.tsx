@@ -9,6 +9,7 @@ import Link from "next/link"
 const products = [
 {
   id: "carboxy",
+  href: "/products/carboxy",
   name: "CO2 Carboxy Therapy",
   description: "Зүүгүй CO2 эмчилгээ нь арьсны хүчилтөрөгчийн солилцоог идэвхжүүлж, нөхөн төлжилтийг хурдасгана.",
   longDescription:
@@ -24,6 +25,7 @@ const products = [
 },
   {
   id: "deep-shoot-ha",
+  href: "/products/deep-shoot",
   name: "Deep Shoot HA",
   description: "Гурвалсан гиалуроны хүчил бүхий гүн чийгшүүлэх арьс сэргээх шийдэл.",
   longDescription:
@@ -39,6 +41,7 @@ const products = [
 },
 {
   id: "deep-shoot-aa",
+  href: "/products/deep-shoot",
   name: "Deep Shoot AA",
   description: "Олон үйлдэлт anti-aging коктейль, арьсны залуужилтыг идэвхжүүлнэ.",
   longDescription:
@@ -54,6 +57,7 @@ const products = [
 },
 {
   id: "gwang-peel",
+  href: "/products/gpeel",
   name: "Gwang Peel 72hr",
   description: "Физик ба химийн хосолсон пилинг, батганд өртөмтгий арьсанд зориулагдсан.",
   longDescription:
@@ -69,6 +73,7 @@ const products = [
 },
 {
   id: "dr-mal",
+  href: "/products/dr-mal",
   name: "Dr. MAL",
   description: "PDT эмчилгээнд зориулсан фотосенсибилизатор гель, батганы эмчилгээнд өндөр үр дүнтэй.",
   longDescription:
@@ -185,7 +190,7 @@ export function Products() {
 
             {/* CTA */}
             <Link
-              href={`/products/${activeProduct.id}`}
+              href={activeProduct.href}
               className="group inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground text-sm font-medium tracking-wide uppercase transition-all hover:bg-accent"
             >
               Дэлгэрэнгүй үзэх
