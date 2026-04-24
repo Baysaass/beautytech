@@ -1,68 +1,36 @@
 "use client"
 
 import Image from "next/image"
-import { Check, ArrowRight, Shield, Award, Syringe, TestTube } from "lucide-react"
+import Link from "next/link"
+import { Shield } from "lucide-react"
 
 const medicalProducts = [
   {
-    id: "dermal-filler",
-    name: "Dermal Filler HA",
-    subtitle: "Гиалуроны хүчлийн филлер",
+    id: "betterfill",
+    name: "Betterfill 56+",
+    subtitle: "56+ Anti-Aging Actives | Skin Booster",
     description:
-      "FDA, KFDA баталгаажуулсан дээд зэргийн гиалуроны хүчлийн филлер. Уруул томруулах, үрчлээ арилгах, нүүрний тодорхойлолт өгөхөд ашиглана.",
-    image: "/images/dermal.jpg",
-    features: [
-      { icon: Shield, text: "FDA, KFDA баталгаатай" },
-      { icon: Award, text: "12-18 сар үргэлжилнэ" },
-      { icon: Syringe, text: "Өвдөлтгүй технологи" },
-      { icon: TestTube, text: "Цэвэр HA формула" },
-    ],
-    applications: [
-      "Уруул томруулах",
-      "Хацар бөглөх",
-      "Эрүү тодорхойлох",
-      "Үрчлээ арилгах",
-      "Хамрын хэлбэр засах",
-    ],
+      "PDRN, Growth Factor, Glutathione, Peptide, Vitamin B Complex зэрэг 56+ идэвхт найрлагатай дэвшилтэт мезо эмчилгээний шийдэл. 35.52% үрчлээ сайжруулна.",
+    image: "/images/pro/딥슛-라인-1-scaled-e1747127215610-2048x1783.png",
+    href: "/products/betterfill",
   },
   {
-    id: "skin-booster",
-    name: "Skin Booster",
-    subtitle: "Арьсны сэргээх эмчилгээ",
+    id: "betterfill-exo",
+    name: "Betterfill EXO56+",
+    subtitle: "PhytoEXO Technology | 56+ Actives",
     description:
-      "Гиалуроны хүчил, витамин, амин хүчлүүдийн хослол нь арьсны гүн давхаргыг тэжээж, чийгшүүлж, залуужуулна.",
-    image: "/images/deep-shoot.jpg",
-    features: [
-      { icon: Shield, text: "Байгалийн найрлага" },
-      { icon: Award, text: "Шууд үр дүн" },
-      { icon: Syringe, text: "Микро инъекц" },
-      { icon: TestTube, text: "Витамин коктейль" },
-    ],
-    applications: [
-      "Нүүрний залуужилт",
-      "Хүзүүний арчилгаа",
-      "Гарын арьс сэргээх",
-      "Толбо арилгах",
-    ],
+      "Centella Asiatica болон 7 ургамлын экстрактаас гаргасан PhytoEXO технологи. Эсийн гүн нөхөн сэргэлтийг идэвхжүүлж, арьсны бүтцийг сайжруулна.",
+    image: "/images/pro/IMG_1529.jpg",
+    href: "/products/betterfill-exo",
   },
   {
-    id: "lipolytic",
-    name: "Lipolytic Solution",
-    subtitle: "Өөх хайлуулах инъекц",
+    id: "dr-mal",
+    name: "Dr. MAL PDT Therapy",
+    subtitle: "Photodynamic Therapy | Acne Treatment",
     description:
-      "Нүүрний давхар эрүү, биеийн тодорхой хэсгийн илүүдэл өөхийг эмчилгээгээр хайлуулж арилгах шийдэл.",
-    image: "/images/carboxy-therapy.jpg",
-    features: [
-      { icon: Shield, text: "Мэс заслын бус" },
-      { icon: Award, text: "Байнгын үр дүн" },
-      { icon: Syringe, text: "Нарийн чиглэлтэй" },
-      { icon: TestTube, text: "Байгалийн найрлагатай" },
-    ],
-    applications: [
-      "Давхар эрүү",
-      "Хацарны өөх",
-      "Биеийн локал өөх",
-    ],
+      "10.8% Methyl-ALA агуулсан PDT photosensitizer. Батга үүсгэгч бактерийг сонгомлоор устгаж, LED (630nm) гэрэлтэй хослон өндөр үр дүн өгнө.",
+    image: "/images/pro/닥터말-메인-배너-2.png",
+    href: "/products/dr-mal",
   },
 ]
 
@@ -70,86 +38,58 @@ export function MedicalProducts() {
   return (
     <section className="py-24 lg:py-32 bg-background">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="font-serif text-3xl md:text-4xl text-foreground font-light">
-            Эмнэлгийн <span className="italic font-medium">Бүтээгдэхүүнүүд</span>
+        {/* Section Header */}
+        <div className="text-center mb-16 lg:mb-20">
+          <p className="text-accent text-sm tracking-[0.3em] uppercase mb-4">
+            Эмнэлгийн бүтээгдэхүүнүүд
+          </p>
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground font-light">
+            Бүтээгдэхүүний <span className="italic font-medium">Каталог</span>
           </h2>
-          <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
+          <p className="mt-6 max-w-2xl mx-auto text-muted-foreground leading-relaxed">
             Зөвхөн мэргэшсэн эмч нарт зориулсан эмнэлгийн түвшний бүтээгдэхүүнүүд
           </p>
         </div>
 
-        <div className="space-y-16">
-          {medicalProducts.map((product, index) => (
-            <div
+        {/* Products Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          {medicalProducts.map((product) => (
+            <Link
               key={product.id}
-              className={`grid lg:grid-cols-2 gap-12 items-center ${
-                index % 2 === 1 ? "lg:flex-row-reverse" : ""
-              }`}
+              href={product.href}
+              className="group relative block overflow-hidden bg-card"
             >
-              <div className={index % 2 === 1 ? "lg:order-2" : ""}>
-                <div className="relative aspect-[4/3] overflow-hidden">
-                  <Image
-                    src={product.image}
-                    alt={product.name}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
+              {/* Image */}
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <Image
+                  src={product.image}
+                  alt={product.name}
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
 
-              <div className={index % 2 === 1 ? "lg:order-1" : ""}>
-                <span className="text-accent text-sm tracking-widest uppercase">
+              {/* Always visible title */}
+              <div className="p-5 bg-card">
+                <p className="text-accent text-xs tracking-[0.2em] uppercase mb-1">
                   {product.subtitle}
-                </span>
-                <h3 className="font-serif text-2xl md:text-3xl text-foreground font-light mt-2 mb-4">
+                </p>
+                <h3 className="font-serif text-lg text-foreground font-light">
                   {product.name}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed mb-6">
+              </div>
+
+              {/* Hover overlay */}
+              <div className="absolute inset-0 flex flex-col items-center justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <p className="text-card text-sm text-center max-w-[220px] mb-4">
                   {product.description}
                 </p>
-
-                <div className="grid grid-cols-2 gap-4 mb-6">
-                  {product.features.map((feature, idx) => {
-                    const Icon = feature.icon
-                    return (
-                      <div key={idx} className="flex items-center gap-3">
-                        <div className="w-10 h-10 bg-accent/10 flex items-center justify-center">
-                          <Icon className="w-5 h-5 text-accent" />
-                        </div>
-                        <span className="text-sm text-muted-foreground">
-                          {feature.text}
-                        </span>
-                      </div>
-                    )
-                  })}
-                </div>
-
-                <div className="mb-8">
-                  <h4 className="text-sm font-medium tracking-wide uppercase text-foreground mb-3">
-                    Хэрэглээ
-                  </h4>
-                  <div className="flex flex-wrap gap-2">
-                    {product.applications.map((app, idx) => (
-                      <span
-                        key={idx}
-                        className="px-3 py-1 bg-muted text-sm text-muted-foreground"
-                      >
-                        {app}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                <a
-                  href="/#contact"
-                  className="group inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground text-sm font-medium tracking-wide uppercase transition-all hover:bg-accent"
-                >
-                  Мэдээлэл авах
-                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-                </a>
+                <span className="px-6 py-2 border border-card/60 text-card text-xs tracking-wider uppercase">
+                  Дэлгэрэнгүй
+                </span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
@@ -162,9 +102,9 @@ export function MedicalProducts() {
                 Мэргэжлийн бүтээгдэхүүн
               </h4>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Эдгээр бүтээгдэхүүнүүд нь зөвхөн мэргэшсэн эмч, арьс заслын 
-                мэргэжилтнүүдэд зориулагдсан. Худалдан авахын тулд мэргэжлийн 
-                гэрчилгээ шаардлагатай. Дэлгэрэнгүй мэдээлэл авахыг хүсвэл 
+                Эдгээр бүтээгдэхүүнүүд нь зөвхөн мэргэшсэн эмч, арьс заслын
+                мэргэжилтнүүдэд зориулагдсан. Худалдан авахын тулд мэргэжлийн
+                гэрчилгээ шаардлагатай. Дэлгэрэнгүй мэдээлэл авахыг хүсвэл
                 бидэнтэй холбогдоно уу.
               </p>
             </div>
